@@ -1,0 +1,129 @@
+.postContainer{
+    width: 100vw;
+
+    img{
+        width: 100vw;
+        height: 30vw;
+    }
+
+    hr{
+
+        margin: 3rem 0;
+        max-width: 740px;
+        border: 1px solid var(--gray-600)
+    }
+}
+
+.articleContainer{
+    width: 60vw;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+
+    h1{
+        font-size: 3rem;
+        margin: 3rem 0 1rem;
+    }
+
+    .miscellaneousInformation{
+        width: 100%;
+        color: var(--gray-300);
+
+        svg{
+            height: 1.2rem;
+            width: 1.2rem;
+
+            margin-right: .5rem;
+            margin-bottom: -.2rem;
+        }
+
+        time, span{
+            padding-right: 1rem;
+            font-size: .94rem;
+        }
+
+        div{
+            padding-top: 1rem;
+
+            .italicSpan{
+                font-style: italic;
+            }
+        }
+    }
+
+    div{
+        padding-top: 3rem
+    }
+
+    h2{
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+
+    p{
+        color: var(--gray-200);
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    p + p {
+        margin-top: 1.4rem;
+    }
+}
+
+.preview{
+    margin: 0 auto 3rem;
+
+    max-width: 740px ;
+    height: 3rem;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 3rem;
+        width: 18rem;
+
+        border-radius: 4px;
+        
+        font-size: 1.4rem;
+        font-weight: bold;
+        
+        color: var(--gray-700);
+        background-color: var(--pink-500);
+
+        margin: 0 auto;
+
+        transition: filter 0.2s;
+    }
+
+    a:hover{
+        filter: brightness(0.8)
+    }
+}
+
+.postNavegation{
+    ul{
+        list-style-type: none;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{
+            p{
+                color: var(--white)
+            }
+
+            span{
+                color: var(--pink-500);
+                font-weight: bold;
+            }
+        }
+
+        li:nth-child(2){
+            text-align: right;
+        }
+        
+    }
+}
