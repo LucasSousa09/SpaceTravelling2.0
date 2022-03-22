@@ -14,6 +14,8 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
+import Comments from "../../components/Comments"
+
 interface OtherPost {
   prevPost: {
     first_publication_date: string | null;
@@ -54,6 +56,8 @@ interface PostProps {
 export default function Post(props: PostProps) {
   const { post, preview, otherPosts } = props
   const router = useRouter()
+
+  const thisUrlPath = router.asPath
   
   if(router.isFallback){
     return <p>Carregando...</p>
@@ -117,6 +121,7 @@ export default function Post(props: PostProps) {
                   )
                 }
             <hr/>
+            <Comments thisUrlPath={thisUrlPath}/>
             <nav className={styles.postNavegation}>
               <ul>
                 <li>
